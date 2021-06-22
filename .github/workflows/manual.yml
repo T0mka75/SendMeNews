@@ -1,7 +1,9 @@
-- name: Test Javascript Hello Action
+- name: HTMLProofer
   # You may pin to the exact commit or the version.
-  # uses: adeloyedeji/github-actions-hello@377903cb4ca4523391cbce04ba0fb3dd947a4a6f
-  uses: adeloyedeji/github-actions-hello@v1.0
+  # uses: chabad360/htmlproofer@2a7ae5816b7173dbbc37cf4cfc33ca6c47c96ecc
+  uses: chabad360/htmlproofer@v1.1
   with:
-    # Who to greet
-    who-to-greet: # default is World
+    # The directory to scan
+    directory: 
+    # HTMLProofer options
+    arguments: # optional
