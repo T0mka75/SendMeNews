@@ -21,7 +21,9 @@ function submitFormHandler(event) {
         imageUrl: imageURL.value
     }
 
-    console.log(neww)
+    New.create(neww)
+
+
 }
 
 
