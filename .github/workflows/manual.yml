@@ -1,9 +1,24 @@
-- name: HTMLProofer
-  # You may pin to the exact commit or the version.
-  # uses: chabad360/htmlproofer@2a7ae5816b7173dbbc37cf4cfc33ca6c47c96ecc
-  uses: chabad360/htmlproofer@v1.1
-  with:
-    # The directory to scan
-    directory: 
-    # HTMLProofer options
-    arguments: # optional
+name: Github Actions Example
+
+on:
+  pull_request:
+  push:
+    branches: 
+      - master
+      - develop
+
+jobs:
+  test:
+    name: Running Units Tests
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install
+      run: npm install
+    - name: Test
+      run: npm test
