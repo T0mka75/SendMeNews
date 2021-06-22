@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SendMeNews</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <title>SendMeNews Musk</title>
 </head>
 
 <body>
@@ -20,11 +22,57 @@
                     <a href="#" class="navbar__link" id="get-users">Users</a>
                 </li>
                 <li>
-                    <a href="#" class="navbar__link" id="sign-up">SignUp</a>
+                    <a href="#" class="navbar__link" id="LogIn">LogIn</a>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <section>
+        <div class="news">
+            <div class="news-title"></div>
+            <div class="news__container">
+                <div class="news__row">
+                    <div class="ct-blog">
+                        <div class="inner">
+
+                        </div>
+                    </div>
+                    <div class="ct-blog2">
+                        <div class="inner2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news__btn">
+                <a href="#">All News</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-modal">
+        <div class="modal-contents">
+
+            <div class="close">+</div>
+
+            <form method="post" id="postForm">
+                <input type="text" placeholder="Title" id="postTitle">
+                <input type="url" placeholder="imageURL" id="postImageURL">
+                <input id="postBtn" class="postNewBtn" type="submit" value="Post">
+            </form>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer__content">
+            <p>copyright &copy;2021 SendMeNews. designed by <span>Tomas Symulevic</span></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="signup.js"></script>
 </body>
 
 </html>
