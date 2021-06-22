@@ -1,0 +1,7 @@
+- name: Test Javascript Hello Action
+  # You may pin to the exact commit or the version.
+  # uses: adeloyedeji/github-actions-hello@377903cb4ca4523391cbce04ba0fb3dd947a4a6f
+  uses: adeloyedeji/github-actions-hello@v1.0
+  with:
+    # Who to greet
+    who-to-greet: # default is World
